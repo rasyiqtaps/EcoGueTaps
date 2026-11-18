@@ -389,7 +389,7 @@ nav{transition:padding .3s,box-shadow .3s}nav.sc{padding-top:6px;padding-bottom:
 nav .l a{position:relative}nav .l a.act{color:var(--purple)}
 nav .l a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;border-radius:3px;background:var(--purple);transform:scaleX(0);transition:transform .3s}
 nav .l a.act::after,nav .l a:hover::after{transform:scaleX(1)}
-@media(max-width:1000px){.burger{display:flex}nav>.btn{display:none}
+@media(max-width:1100px){.burger{display:flex}nav>.btn{display:none}
  nav .l{position:absolute;top:calc(100% + 8px);left:0;right:0;margin:0;flex-direction:column;gap:0;background:var(--cream);border-radius:20px;padding:10px 22px;box-shadow:0 12px 30px rgba(0,0,0,.3);opacity:0;visibility:hidden;transform:translateY(-10px);transition:.25s;overflow:visible}
  nav.open .l{opacity:1;visibility:visible;transform:none}
  nav .l a{padding:12px 0;font-size:16px;border-bottom:1px solid #eadfb8}nav .l a:last-child{border:0}nav .l a::after{display:none}}
@@ -445,7 +445,7 @@ nav b{color:var(--yellow);text-shadow:0 1px 3px rgba(0,0,0,.5)}
 nav .l a{color:#ECE5D3;text-shadow:0 1px 3px rgba(0,0,0,.55)}nav .l a.act,nav .l a:hover{color:var(--yellow)}nav .l a::after{background:var(--yellow)}
 nav>.btn.p{background:var(--yellow);color:var(--ink)}
 .br{position:absolute;inset:0;z-index:0;pointer-events:none}
-@media(max-width:1000px){nav .l{background:var(--green);border:2px solid #6a4228}nav .l a{border-bottom-color:rgba(236,229,211,.2)}}
+@media(max-width:1100px){nav .l{background:var(--green);border:2px solid #6a4228}nav .l a{border-bottom-color:rgba(236,229,211,.2)}}
 @media(prefers-reduced-motion:reduce){.br{clip-path:none}}
 
 .br canvas{position:absolute;top:0;left:0;display:block}
@@ -453,7 +453,7 @@ nav>.btn.p{background:var(--yellow);color:var(--ink)}
 
 nav .l a{transition:opacity .6s var(--od,0s),color .25s}body:not(.ready) nav .l a{opacity:0}
 nav>b,nav>.btn.p{transition:opacity .8s var(--od,0s)}
-@media(min-width:1001px){nav>.l{opacity:1!important;transition:none}}
+@media(min-width:1101px){nav>.l{opacity:1!important;transition:none}}
 
 nav{position:absolute}
 
@@ -486,3 +486,66 @@ body{background:#000}
 .pf div{height:150px;font-size:70px;position:relative;background-image:radial-gradient(circle at 18% 28%,rgba(255,255,255,.38) 0 24px,transparent 25px),radial-gradient(circle at 86% 72%,rgba(255,255,255,.26) 0 38px,transparent 39px)!important}
 .pf div::after{content:"✓ Terverifikasi";position:absolute;left:10px;bottom:10px;font:800 11px 'Nunito',sans-serif;background:rgba(255,255,255,.88);color:#3B5335;padding:3px 10px;border-radius:99px}
 .eg-footer{background:#7f7d44}
+
+/* === Tata letak compact === */
+.wrap{max-width:1180px}
+#top{min-height:0;padding-top:128px;padding-bottom:34px}
+.zone{padding-top:60px;padding-bottom:52px}
+#info{padding-top:50px;padding-bottom:84px}
+.eg-section{padding-top:44px;padding-bottom:36px}.eg-section--tight{padding-top:22px;padding-bottom:22px}
+#misi{padding-top:50px}#tentang-sec{padding-top:20px}#donasi{padding-top:50px;padding-bottom:0}
+.eg-title{font-size:clamp(26px,3.4vw,36px);margin-bottom:2px}.eg-sub{margin-bottom:14px}
+.hero{padding:28px 36px}.chip{margin-bottom:12px}.chip h2{font-size:clamp(24px,3vw,32px)}.vals,.team{margin-top:12px}.stage{padding:20px}
+.eg-board-grid{gap:16px}.eg-mountains{height:230px}.rv{transform:translateY(16px)}
+.card{padding:18px}.m{padding:18px}
+/* === Daratan (di bawah leaderboard) === */
+.land{position:relative;height:120px;margin:-6px 0 -20px;z-index:2}
+.land svg{position:absolute;inset:0;width:100%;height:100%;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.land .scene{position:absolute;left:2vw;right:2vw;top:auto;bottom:34px;height:auto;display:flex;justify-content:space-around;align-items:flex-end;z-index:3}.land .scene::before{display:none}
+/* === Komponen baru: Eco Library, kontak, admin, bukti foto === */
+.eg-ui-glass{background:rgba(236,229,211,.95);border-radius:22px;box-shadow:0 8px 22px rgba(20,28,18,.12)}
+.eg-ui-eyebrow{display:inline-block;color:var(--eg-purple-ink);background:var(--eg-tint-purple);border-radius:99px;padding:5px 12px;font:800 11px/1.2 'Nunito',sans-serif;letter-spacing:.08em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.lib-search input,.lib-head input,.kon__form input,.kon__form textarea,.eg-proof input,.eg-proof textarea,.eg-ui-review-dialog textarea,.adm select{width:100%;padding:9px 12px;border-radius:12px;border:2px solid #d7dbc9;background:#fff;font:600 14px 'Nunito',sans-serif;margin:0;color:var(--ink)}
+.adm select{width:auto}
+.lib-head{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;align-items:center;padding:18px 24px}
+.lib-head h2{font-size:clamp(26px,3.4vw,36px);margin:8px 0 4px}.lib-head h2 span{color:var(--green)}.lib-head p{font-weight:700;color:#4a5a46;font-size:15px}
+.eg-ui-filters{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.eg-ui-filter{border:0;cursor:pointer;padding:6px 13px;border-radius:99px;color:var(--ink);font:800 12px 'Nunito',sans-serif;background:#e2d8b8}.eg-ui-filter.is-active{background:var(--green);color:#fff}
+.eg-ui-count{margin:10px 2px 8px;font:800 13px 'Nunito',sans-serif;color:var(--ink)}
+.eg-ui-article-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.eg-ui-article{padding:14px;display:flex;flex-direction:column;gap:6px}
+.eg-ui-article__art{height:60px;border-radius:14px;display:grid;place-items:center;font-size:30px}
+.eg-ui-article__category{font:800 11px 'Nunito',sans-serif;color:var(--eg-purple-ink);text-transform:uppercase;letter-spacing:.06em}
+.eg-ui-article h3{font-size:18px}.eg-ui-article__summary{font-size:13.5px;color:#3d4a38;flex:1}
+.eg-ui-article__foot{display:flex;justify-content:space-between;align-items:center;font:700 12px 'Nunito',sans-serif}
+.eg-ui-open{border:0;background:none;color:var(--green);font:800 13px 'Nunito',sans-serif;cursor:pointer;padding:0}
+.eg-ui-empty{padding:12px;text-align:center;font-weight:700}
+dialog.eg-ui-article-modal,dialog.eg-ui-review-dialog{width:min(560px,94vw)}
+.eg-ui-reading-time{font:700 12px 'Nunito',sans-serif;opacity:.7;margin:2px 0 8px}.eg-ui-reading-paragraph{margin:0 0 8px;font-size:14.5px;line-height:1.55}.eg-ui-article-note{font-size:12px;opacity:.7;margin-top:8px}
+.kon{grid-template-columns:.8fr 1.2fr;align-items:center;gap:22px;margin-top:30px}
+.kon__intro h2{font-size:clamp(24px,3vw,32px);margin:8px 0 6px}.kon__intro p{font-weight:700;font-size:15px;max-width:34ch}
+.kon__form{background:rgba(236,229,211,.95);border-radius:20px;padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;box-shadow:0 8px 22px rgba(20,28,18,.14)}
+.kon__form label{font:800 12px 'Nunito',sans-serif;display:block;margin-bottom:3px}.kon__form .full{grid-column:1/-1}.kon__form textarea{resize:vertical}
+.kon__act{display:flex;align-items:center;gap:12px}.eg-ui-form-result{font-size:12px;font-weight:800;color:var(--green);margin:0}
+.adm{overflow:hidden}.adm summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 20px;font:700 15px 'Nunito',sans-serif}
+.adm summary::-webkit-details-marker{display:none}.adm summary::after{content:"▾";margin-left:8px}.adm[open] summary::after{content:"▴"}
+.adm__badge{margin-left:auto;background:var(--yellow);border-radius:99px;padding:3px 11px;font:800 12px 'Nunito',sans-serif}
+.adm__body{padding:0 20px 16px}.adm__warn{font-size:12px;background:#f3e3a6;border-radius:10px;padding:7px 11px;margin-bottom:10px}
+.adm__tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.adm__tools>div{background:#fff;border-radius:12px;padding:5px 14px;font:800 12px 'Nunito',sans-serif}.adm__tools strong{display:block;font-size:20px;color:var(--green);line-height:1.1}
+.adm__tools label{margin-left:auto;font:800 12px 'Nunito',sans-serif}
+.eg-ui-admin-row{display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:8px 12px;margin-top:6px}.eg-ui-admin-row>div{flex:1;min-width:0}.eg-ui-admin-row h3{font-size:15px}.eg-ui-admin-row p{font-size:12px;opacity:.7}.eg-ui-admin-row .eg-btn{padding:6px 13px;font-size:12px}
+.eg-ui-review-status{border-radius:99px;padding:4px 11px;font:800 11px 'Nunito',sans-serif;background:#f3e3a6;color:#6b5412;white-space:nowrap}.eg-ui-review-status.is-disetujui{background:#c9d9c2;color:#2c3f28}.eg-ui-review-status.is-ditolak{background:#f1d3d0;color:#8a3128}
+.eg-ui-proof-preview img{max-width:100%;max-height:230px;border-radius:12px;display:block;margin:6px 0}
+.eg-ui-review-dialog label{display:block;margin:8px 0 4px;font:800 12px 'Nunito',sans-serif}
+.eg-ui-review-actions{display:flex;gap:8px;margin-top:10px}.eg-ui-reject{background:#a8453a;color:#fff}.eg-ui-error{color:#8a3128;font-weight:700}
+.eg-status--disetujui{background:#c9d9c2;color:#2c3f28}.eg-status--disetujui i{background:#3B5335}.eg-status--ditolak{background:#f1d3d0;color:#8a3128}.eg-status--ditolak i{background:#a8453a}
+.eg-proof{display:grid;gap:5px;margin:10px 0;padding:10px 12px;border:2px dashed #b9b17a;border-radius:14px;background:rgba(255,255,255,.55)}
+.eg-proof label{font:800 12px 'Nunito',sans-serif}.eg-proof p{font-size:11.5px;opacity:.75;margin:0}.eg-proof textarea{resize:none}.eg-proof input[type=file]{padding:6px;font-size:13px}
+.eg-proof__img{max-height:130px;max-width:100%;object-fit:contain;border-radius:10px;justify-self:start}
+@media(max-width:760px){.lib-head,.kon,.kon__form{grid-template-columns:1fr}.adm__tools label{margin-left:0}}
+
+/* pop-up selalu di tengah (reset margin global menghilangkan margin:auto bawaan dialog) */
+dialog.eg-modal{margin:auto;max-height:92vh;overflow:auto}
+dialog.eg-modal::backdrop{background:rgba(20,28,18,.55)}
