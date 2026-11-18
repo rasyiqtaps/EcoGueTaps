@@ -1,0 +1,6 @@
+{
+  "name": "EcoGueTaps",
+  "description": "Petualangan Eco Hero — misi harian menjaga lingkungan, Eco Library, papan peringkat, dan donasi pemulihan alam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
