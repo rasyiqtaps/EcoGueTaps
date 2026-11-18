@@ -1,180 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>EcoGueTaps</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beranda | EcoGueTaps</title>
+  <meta name="description"
+    content="EcoGueTaps, petualangan edukasi lingkungan dengan misi harian, artikel, dan ranking Eco Heroes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/ecoguetaps.css">
+  <link rel="stylesheet" href="assets/css/eg-pages.css">
 </head>
+
 <body>
-<div id="intro"><div class="isky"></div><canvas id="introCanvas" class="iscene" aria-hidden="true"></canvas><button id="skip" class="btn y" type="button">Lewati intro</button></div>
-<div id="vig"></div>
-<div class="dots" aria-label="Lapisan bumi"><a href="#top" data-l="Ozon" aria-label="Lapisan ozon"></a><a href="#info" data-l="Langit" aria-label="Langit"></a><a href="#misi" data-l="Daratan" aria-label="Daratan"></a><a href="#donasi" data-l="Tanah" aria-label="Tanah"></a></div>
-<nav aria-label="Menu utama">
- <div class="br" aria-hidden="true"><canvas id="treeCanvas"></canvas></div>
- <b><svg class="lgo" viewBox="0 0 52 36" width="46" height="32" aria-hidden="true"><path d="M3 17C3 6 16 3 28 6 27 18 18 26 3 17Z" fill="#8F9E8B"/><path d="M4 17C12 16 18 12 23 8" stroke="#ECE5D3" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M49 12C49 3 38 1 28 4 29 14 37 21 49 12Z" fill="#A8C09A"/><path d="M28 26C28 20 27 14 28 8" stroke="#ECE5D3" stroke-width="2" fill="none" stroke-linecap="round"/></svg>EcoGueTaps</b>
- <div class="l" id="menu"><a href="#top">Beranda</a><a href="#cara">Informasi</a><a href="#info">Bukti</a><a href="#misi">Misi</a><a href="#peringkat">Peringkat</a><a href="#tentang">Tentang</a><a href="#donasi">Donasi</a><a href="#kontak">Kontak</a></div>
- <a class="btn p" href="#misi">Mulai sekarang</a>
- <button class="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-</nav>
-
-<div id="pg">
-<!-- 1. LAPISAN OZON -->
-<section class="zone" id="top">
- <div class="lab">Lapisan ozon · sehat</div>
- <div class="met" style="left:80%;top:8%"></div><div class="met" style="left:55%;top:2%;animation-delay:2.5s"></div><div class="met" style="left:95%;top:25%;animation-delay:4s"></div>
- <div class="wrap hero">
-  <div>
-   <p class="eyebrow">Petualangan Eco Hero</p>
-   <h1>Langkah Kecil,<br><span>Bumi Makin Ceria!</span></h1>
-   <p>Ayo belajar menjaga lingkungan lewat misi seru, kumpulkan XP, dan jadilah pahlawan bumi!</p>
-   <a class="btn g" href="#misi">Mulai Petualangan →</a> <a class="btn" style="background:#F6F1E4;color:var(--purple)" href="#cara">Cara Bermain</a>
-  </div>
-  <div class="mas2" role="img" aria-label="Maskot EcoGueTaps"><svg viewBox="0 0 340 290" style="overflow:visible;width:100%"><circle cx="60" cy="40" r="32" fill="#E2C258" opacity=".4"/><circle cx="255" cy="92" r="96" fill="#F6F1E4" opacity=".75"/><circle cx="255" cy="92" r="72" fill="#E2C258"/><circle cx="232" cy="215" r="82" fill="#C9D2C5"/><circle cx="268" cy="190" r="22" fill="#E5DCE8"/><ellipse cx="256" cy="58" rx="30" ry="52" transform="rotate(18 256 58)" fill="#4c6a43"/><path d="M290 82l12 14-12 14-12-14z" fill="#2c3f28"/><ellipse cx="62" cy="132" rx="36" ry="60" transform="rotate(-22 62 132)" fill="#7f9a72"/><ellipse cx="78" cy="168" rx="26" ry="12" fill="#3B5335"/><ellipse cx="150" cy="215" rx="92" ry="74" fill="#C5B3C9"/><circle cx="150" cy="130" r="96" fill="#B5C6A6" stroke="#8F9E8B" stroke-width="14"/><ellipse class="eye" cx="116" cy="122" rx="8" ry="11" fill="#243020"/><ellipse class="eye" cx="178" cy="122" rx="8" ry="11" fill="#243020"/><ellipse cx="100" cy="146" rx="15" ry="9" fill="#D8B4BE"/><ellipse cx="196" cy="146" rx="15" ry="9" fill="#D8B4BE"/><path d="M140 156q8 10 16 0" stroke="#243020" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="140" y="214" width="20" height="30" rx="10" fill="#ECE5D3"/><ellipse cx="112" cy="270" rx="36" ry="11" fill="#3B5335"/><ellipse cx="190" cy="266" rx="36" ry="11" fill="#3B5335"/><path d="M20 112Q20 128 36 128Q20 128 20 144Q20 128 4 128Q20 128 20 112Z" fill="#7d6788"/><path d="M318 236Q318 250 332 250Q318 250 318 264Q318 250 304 250Q318 250 318 236Z" fill="#E2C258"/></svg></div>
- </div>
- <div class="wrap river" aria-hidden="true" style="margin-top:20px"><svg class="w w1" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40Q75 8 150 40T300 40T450 40T600 40T750 40T900 40T1050 40T1200 40V80H0Z"/></svg><svg class="w w2" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40Q75 8 150 40T300 40T450 40T600 40T750 40T900 40T1050 40T1200 40V80H0Z"/></svg><svg class="w w3" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40Q75 8 150 40T300 40T450 40T600 40T750 40T900 40T1050 40T1200 40V80H0Z"/></svg><span class="bt" style="top:20%">🍂</span><span class="bt" style="top:46%;animation-delay:-7s">🍃</span></div>
- <div class="wrap" id="cara" style="margin-top:20px">
-  <div class="grid">
-   <div class="card"><h3>Tentang website</h3><p style="margin-top:8px">EcoGueTaps mengajak pelajar menjaga lingkungan lewat misi harian. Kamu mengerjakan misi, mengunggah foto sebagai bukti, lalu mendapat XP dan naik peringkat.</p></div>
-   <div class="card"><h3>Latar belakang</h3><p style="margin-top:8px">Sampah plastik, air yang terbuang, dan hutan yang terbakar sering terasa jauh dari keseharian. Kami mengubahnya menjadi tindakan kecil yang bisa dilakukan dari rumah atau sekolah.</p></div>
-  </div>
- </div>
-</section>
-
-<!-- 2. LANGIT -->
-<section class="zone" id="info" data-t="day">
- <div class="sk d"></div><div class="sk s"></div>
- <div class="sk n"><div class="au a1"></div><div class="au a2"></div></div>
- <div class="sun"></div>
- <div class="cl" style="top:230px;animation-delay:-10s"></div>
- <div class="cl rain" style="top:420px;animation-delay:-40s"><i style="left:30px"></i><i style="left:70px;animation-delay:.3s"></i><i style="left:110px;animation-delay:.5s"></i></div>
- <div class="fly" style="top:300px;animation-delay:-6s">🐦</div><div class="fly" style="top:340px;animation-delay:-3s;font-size:20px">🐦</div>
- <div class="fly plane" style="top:170px;animation-delay:-14s">✈️</div>
- <div class="lab">Langit · berubah mengikuti waktu</div>
- <div class="wrap">
-  <div class="tbar" role="group" aria-label="Waktu langit">
-   <button data-t="day" aria-pressed="true">Siang</button><button data-t="dusk" aria-pressed="false">Senja</button><button data-t="night" aria-pressed="false">Malam</button>
-  </div>
-  <div class="chip"><h2>Bukti dari peserta</h2><p>Contoh laporan misi</p></div>
-  <div class="proof">
-   <div class="pf"><div style="background:#8F9E8B">🧴</div><p><b>BintangHijau · Tumbler Hero</b>Seminggu bawa botol sendiri.</p></div>
-   <div class="pf"><div style="background:#C5B3C9">🚰</div><p><b>DaunCeria · Water Guardian</b>Menutup keran saat menyikat gigi.</p></div>
-   <div class="pf"><div style="background:#E2C258">♻️</div><p><b>EcoKecil · Recycle Ranger</b>Memilah sampah organik dan anorganik.</p></div>
-  </div>
- </div>
-</section>
-
-<!-- 3. DARATAN: Daily Quest (dari tim) -->
-<section class="eg-section eg-section--quest" id="misi">
- <div class="scene" aria-hidden="true"><span>🌳</span><span>🌿</span><span>🚲</span><span>🌲</span><span>🧑‍🌾</span><span>🌱</span><span>🌳</span><span>♻️</span><span>🌻</span><span>🌲</span><span>🌷</span><span>🚶</span><span>🌳</span><span>🌿</span></div>
- <div class="eg-hill eg-hill--lilac" aria-hidden="true"></div><div class="eg-hill eg-hill--gold-r" aria-hidden="true"></div><div class="eg-hill eg-hill--gold-l" aria-hidden="true"></div>
- <div class="wrap">
-  <h2 class="eg-title">Misi seru hari ini!</h2>
-  <p class="eg-sub">Pilih tantangan yang bisa kamu lakukan dari rumah atau sekolah.</p>
-  <p class="eg-reroll-info" id="eg-reroll-info"></p>
-  <div class="eg-grid eg-grid--3" id="eg-quest-list"></div>
- </div>
-</section>
-
-<!-- Leaderboard (dari tim) -->
-<section class="eg-section" id="peringkat">
- <div class="wrap">
-  <h2 class="eg-title">Jadi Pahlawan Bumi!</h2>
-  <p class="eg-sub">Belajar, beraksi, dan lihat progres petualanganmu.</p>
-  <div class="eg-board-grid">
-   <div class="eg-card eg-board">
-    <div class="eg-board__head"><span class="eg-board__icon" aria-hidden="true">&#127942;</span><div><h3>Top Eco Heroes</h3><p>Peringkat minggu ini (contoh)</p></div></div>
-    <div class="eg-board__cols" aria-hidden="true"><span>#</span><span>Pahlawan</span><span>XP</span><span>Poin</span></div>
-    <ol class="eg-board__list" id="eg-leaderboard"></ol>
-   </div>
-   <aside class="eg-level" id="eg-level" aria-label="Progres level">
-    <p class="eg-level__lv" id="eg-level-lv"></p>
-    <h3>Level Up!</h3>
-    <p class="eg-level__text">Semakin rajin menjalankan misi, semakin banyak XP yang kamu dapat.</p>
-    <div class="eg-level__star" aria-hidden="true"><svg viewBox="-16 -16 32 32"><path d="M0,-14 L4,-4.5 L14,-4 L6.3,2.5 L8.7,12 L0,6.8 L-8.7,12 L-6.3,2.5 L-14,-4 L-4,-4.5Z" fill="#E2C258"/></svg></div>
-    <div class="eg-level__bar" role="progressbar" aria-valuemin="0" aria-valuemax="400" aria-valuenow="250" aria-label="Progres XP menuju level berikutnya"><span id="eg-level-fill"></span></div>
-    <p class="eg-level__caption" id="eg-level-caption"></p>
-    <p class="eg-level__poin" id="eg-level-poin"></p>
-   </aside>
-  </div>
- </div>
-</section>
-
-<!-- Tentang -->
-<section class="eg-section" id="tentang-sec"><div class="wrap">
-<div id="tentang" style="margin-top:46px">
-  <div class="chip"><h2>Tentang kami</h2><p>Kenapa EcoGueTaps ada dan siapa yang membuatnya.</p></div>
-  <div class="card"><h3>Visi kami</h3><p style="margin-top:8px">Setiap pelajar bisa menjadi penjaga bumi lewat kebiasaan kecil yang konsisten. EcoGueTaps mengubah niat baik menjadi misi harian yang seru, terukur, dan bisa dibuktikan.</p></div>
-  <div class="grid vals">
-   <div class="card val"><b>📚</b><h3>Belajar</h3><p>Cerita dan fakta singkat tentang sampah, energi, dan alam.</p></div>
-   <div class="card val"><b>📸</b><h3>Beraksi</h3><p>Kerjakan misi, unggah foto bukti, lalu kumpulkan XP.</p></div>
-   <div class="card val"><b>🌍</b><h3>Jaga bumi</h3><p>Dampak kecil setiap hari, dan dukungan nyata lewat donasi.</p></div>
-  </div>
-  <div class="team">
-   <div class="mem"><span class="av" style="background:#7d6788">R</span><div><h3>Rasyiq</h3><small>Home, About, Navbar, Footer</small></div></div>
-   <div class="mem"><span class="av" style="background:#3B5335">R</span><div><h3>Rofiq</h3><small>Eco Library, Contact, XP, Leaderboard</small></div></div>
-   <div class="mem"><span class="av" style="background:#e8a830">A</span><div><h3>Akmal</h3><small>Daily Quest, Foto bukti, My Journey</small></div></div>
-  </div>
- </div>
-</div></section>
-
-<!-- 4. TANAH -->
-<section class="zone" id="donasi">
- <div class="rock" style="width:90px;height:56px;left:3%;top:46px"></div><div class="rock" style="width:56px;height:36px;right:6%;top:30px"></div><div class="rock" style="width:70px;height:44px;left:48%;bottom:210px"></div>
- <div class="seed" style="left:14%;top:70px"></div><div class="seed g" style="right:20%;top:90px"></div><div class="seed" style="left:70%;bottom:260px"></div><div class="seed g" style="left:30%;bottom:180px"></div>
- <div class="lab" style="background:rgba(0,0,0,.25)">Tanah · penopang semua makhluk</div>
- <div class="wrap">
-  <div class="chip"><h2>Dukung pemulihan alam</h2><p>Pilih program, lihat targetnya, lalu ikut berdonasi.</p></div>
-  <div class="stage">
-   <div class="fire"></div><div class="fx" id="emb"></div>
-   <div class="tabs" role="group" aria-label="Program donasi">
-    <button data-c="reb" aria-pressed="true">Reboisasi</button><button data-c="kar" aria-pressed="false">Karhutla</button><button data-c="alam" aria-pressed="false">Bantuan alam</button>
-   </div>
-   <div class="dn">
-    <div>
-     <h3 id="ct" style="font-size:30px"></h3><p id="cd" style="margin-top:8px;max-width:52ch"></p>
-     <div class="goal"><b>Target dana</b><div class="bar"><i id="b1"></i></div><small id="s1"></small></div>
-     <div class="goal"><b id="g2t"></b><div class="bar"><i id="b2"></i></div><small id="s2"></small></div>
-    </div>
-    <form class="form" id="f"><h3>Donasi sekarang</h3>
-     <div class="amt" role="group" aria-label="Nominal"><button type="button" aria-pressed="false">Rp10.000</button><button type="button" aria-pressed="true">Rp25.000</button><button type="button" aria-pressed="false">Rp50.000</button><button type="button" aria-pressed="false">Rp100.000</button></div>
-     <input id="nm" placeholder="Nama (boleh disamarkan)" aria-label="Nama">
-     <button class="btn g" type="submit" style="width:100%">Kirim donasi</button><div id="msg" role="status"></div></form>
-   </div>
-  </div>
-  <div class="kon" id="kontak">
-   <div class="card"><h3>Kontak</h3><p style="margin-top:8px">Ada ide misi baru atau ingin bekerja sama? Tulis ke kami.</p></div>
-   <div class="card"><p>Email: isi-email-kamu@contoh.id<br>Instagram: @isi.akun.kamu</p></div>
-  </div>
- </div>
-</section>
-</div>
-    <!-- ============ FOOTER ============ -->
-    <footer class="eg-footer">
-        <svg class="eg-mountains" viewBox="0 0 1440 520" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0 80 L70 150 L130 260 L330 190 L520 120 L560 150 L760 70 L860 130 L990 40 L1090 120 L1190 60 L1300 170 L1440 100 L1440 520 L0 520Z" fill="#9c9246" opacity=".95"/>
-            <path d="M0 260 L160 130 L300 210 L430 300 L640 220 L820 150 L1010 330 L1180 230 L1330 130 L1440 250 L1440 520 L0 520Z" fill="#c6a936" opacity=".9"/>
-            <path d="M0 300 L120 190 L230 260 L330 360 L520 290 L690 330 L860 270 L1020 380 L1160 330 L1300 300 L1440 360 L1440 520 L0 520Z" fill="#33432d"/>
-            <path d="M0 400 L180 330 L310 390 L440 330 L620 400 L800 340 L1000 420 L1200 360 L1440 430 L1440 520 L0 520Z" fill="#26331f"/>
-        </svg>
-        <div class="eg-footer__body">
-            <p><strong>EcoGueTaps</strong> &mdash; Langkah kecil, bumi makin ceria.</p>
-            <p>&copy; 2026 EcoGueTaps &middot; Pemrograman Web</p>
+  <div class="eg-page eg-page--home">
+    <svg aria-hidden="true" class="eg-star eg-star--top" viewbox="-16 -16 32 32">
+      <path d="M0,-14 L4,-4.5 L14,-4 L6.3,2.5 L8.7,12 L0,6.8 L-8.7,12 L-6.3,2.5 L-14,-4 L-4,-4.5Z" fill="#d7b9ae">
+      </path>
+    </svg>
+    <header class="eg-wrap">
+      <div class="eg-nav" id="eg-nav">
+        <a aria-label="EcoGueTaps" class="eg-logo" href="index.html">
+          <svg aria-hidden="true" height="36" viewbox="0 0 52 36" width="52">
+            <path d="M3 17 C3 6 16 3 28 6 C27 18 18 26 3 17Z" fill="#3e6b4b"></path>
+            <path d="M4 17 C12 16 18 12 23 8" fill="none" stroke="#a9d99a" stroke-linecap="round" stroke-width="1.6">
+            </path>
+            <path d="M49 12 C49 3 38 1 28 4 C29 14 37 21 49 12Z" fill="#4f8a5e"></path>
+            <path d="M28 26 C28 20 27 14 28 8" fill="none" stroke="#2f5a3d" stroke-linecap="round" stroke-width="2">
+            </path>
+          </svg>
+          <span class="eg-logo__text">Eco<b>Gue</b><i>Taps</i></span>
+        </a>
+        <button type="button" class="eg-nav__toggle" id="eg-nav-toggle" aria-label="Buka menu" aria-expanded="false"
+          aria-controls="eg-nav-menu">&#9776;</button>
+        <nav class="eg-nav__menu" id="eg-nav-menu" aria-label="Navigasi utama"><a href="index.html"
+            aria-current="page">Beranda</a>
+          <a href="misi.html">Misi</a>
+          <a href="peringkat.html">Peringkat</a>
+          <a href="belajar.html">Belajar</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="kontak.html">Kontak</a>
+          <a href="admin.html" class="eg-nav__admin">Admin Demo</a>
+          <a class="eg-btn eg-btn--purple eg-nav__cta" href="misi.html">Mulai Sekarang</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="eg-section eg-home-hero" aria-labelledby="eg-home-title">
+        <div class="eg-wrap">
+          <div class="eg-home-hero__grid eg-ui-glass">
+            <div class="eg-home-hero__intro"><span class="eg-ui-eyebrow">PETUALANGAN ECO HERO</span>
+              <h1 id="eg-home-title">Langkah Kecil, <span>Bumi Makin Ceria!</span></h1>
+              <p>Belajar merawat lingkungan lewat misi seru, kumpulkan XP, dan tumbuh menjadi Eco Hero!</p>
+              <div class="eg-home-actions"><a href="misi.html" class="eg-btn eg-btn--green">Mulai Petualangan →</a>
+                <a href="tentang.html" class="eg-btn eg-btn--purple">Cara Bermain</a>
+              </div>
+            </div>
+            <div class="eg-home-hero__picture" aria-hidden="true">
+              <div class="eg-home-earth"><span>🌍</span><small>Small steps, big impact!</small></div>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="eg-section eg-home-how">
+        <div class="eg-wrap">
+          <div class="eg-home-heading">
+            <h2 class="eg-title">Satu Langkah, Banyak Manfaat</h2>
+            <p class="eg-sub">Pilih pengalaman yang mau kamu coba hari ini.</p>
+          </div>
+          <div class="eg-home-feature-grid">
+            <a href="misi.html" class="eg-home-feature eg-tone-green"><span class="eg-home-feature__emoji"
+                aria-hidden="true">🌱</span>
+              <h3>Daily Quest</h3>
+              <p>Selesaikan tantangan dan kirim bukti fotomu.</p><strong>Jelajahi Misi →</strong>
+            </a>
+            <a href="belajar.html" class="eg-home-feature eg-tone-purple"><span class="eg-home-feature__emoji"
+                aria-hidden="true">📚</span>
+              <h3>Eco Library</h3>
+              <p>Baca cerita edukasi lingkungan yang mudah dipahami.</p><strong>Mulai Belajar →</strong>
+            </a>
+            <a href="peringkat.html" class="eg-home-feature eg-tone-yellow"><span class="eg-home-feature__emoji"
+                aria-hidden="true">🏆</span>
+              <h3>Peringkat Eco Heroes</h3>
+              <p>Lihat progres XP dan posisi ranking demo kamu.</p><strong>Lihat Ranking →</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="eg-section eg-home-bottom">
+        <div class="eg-wrap">
+          <div class="eg-home-banner eg-ui-glass">
+            <div><span class="eg-ui-eyebrow">BAGAIMANA CARANYA?</span>
+              <h2>Belajar, Beraksi, Lalu Naik Level!</h2>
+              <p>Jelajahi misi, unggah bukti kegiatan secara aman, tunggu verifikasi, lalu kumpulkan XP.</p>
+            </div>
+            <a href="misi.html" class="eg-btn eg-btn--green">Coba Daily Quest →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="eg-footer">
+      <svg aria-hidden="true" class="eg-mountains" preserveaspectratio="none" viewbox="0 0 1440 520">
+        <path
+          d="M0 80 L70 150 L130 260 L330 190 L520 120 L560 150 L760 70 L860 130 L990 40 L1090 120 L1190 60 L1300 170 L1440 100 L1440 520 L0 520Z"
+          fill="#9c9246" opacity=".95"></path>
+        <path
+          d="M0 260 L160 130 L300 210 L430 300 L640 220 L820 150 L1010 330 L1180 230 L1330 130 L1440 250 L1440 520 L0 520Z"
+          fill="#c6a936" opacity=".9"></path>
+        <path
+          d="M0 300 L120 190 L230 260 L330 360 L520 290 L690 330 L860 270 L1020 380 L1160 330 L1300 300 L1440 360 L1440 520 L0 520Z"
+          fill="#33432d"></path>
+        <path d="M0 400 L180 330 L310 390 L440 330 L620 400 L800 340 L1000 420 L1200 360 L1440 430 L1440 520 L0 520Z"
+          fill="#26331f"></path>
+      </svg>
+      <div class="eg-footer__body">
+        <p><strong>EcoGueTaps</strong> — Langkah kecil, bumi makin ceria.</p>
+        <p>© 2026 EcoGueTaps · Pemrograman Web</p>
+      </div>
     </footer>
 
-    <!-- Pop-up detail misi (mis. 'Lihat Misi') -->
-    <dialog class="eg-modal" id="eg-modal" aria-labelledby="eg-modal-title">
-        <form method="dialog" class="eg-modal__close-wrap">
-            <button class="eg-modal__close" aria-label="Tutup">&times;</button>
-        </form>
-        <div class="eg-modal__body" id="eg-modal-body"></div>
-    </dialog>
+  </div>
+  <script defer src="assets/js/eg-nav.js"></script>
 
-    <!-- Toast notifikasi -->
-    <div class="eg-toast" id="eg-toast" role="status" aria-live="polite"></div>
-
-<script src="script.js" defer></script>
 </body>
+
 </html>
