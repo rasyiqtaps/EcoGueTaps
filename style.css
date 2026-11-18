@@ -80,10 +80,6 @@
 .eg-title { margin: 0; font: 700 clamp(30px, 3.4vw, 38px)/1.15 var(--eg-font-head); color: var(--eg-ink); }
 .eg-sub { margin: 6px 0 28px; font-weight: 600; color: #6c6f58; }
 
-.eg-hill { position: absolute; z-index: 0; pointer-events: none; border-radius: 50%; }
-.eg-hill--lilac { right: -8%; top: -30px; width: 62%; height: 420px; background: #c7b4d4; }
-.eg-hill--gold-r { right: -22%; top: 250px; width: 70%; height: 520px; background: #d6a82b; }
-.eg-hill--gold-l { left: -30%; top: 360px; width: 78%; height: 560px; background: #cfa42b; }
 
 .eg-grid { display: grid; gap: 22px; }
 .eg-grid--3 { grid-template-columns: repeat(3, 1fr); }
@@ -465,7 +461,7 @@ nav{position:absolute}
 
 /* === Gabungan dengan modul tim: latar zip (hitam > lavender > kuning > hijau > hitam) === */
 body{background:#26331f}
-#pg{position:relative;overflow-x:clip;background:linear-gradient(180deg,#000 0%,#1d1a20 3%,#3b343f 8%,#8e7c9d 16%,#c4b3d2 22%,#d2b867 32%,#d6b23a 40%,#d9bf72 50%,#dfc566 58%,#d6bb55 66%,#b9a94b 76%,#7f7d44 100%)}
+#pg{position:relative;overflow-x:clip;background:linear-gradient(180deg,#07090a 0%,#121b12 7%,#1c2a1a 11%,#3B5335 16.6%,#6f8277 20%,#8F9E8B 23.5%,#ECE5D3 26.5%,#B4C0AE 31%,#8F9E8B 42%,#5f7459 58%,#566b4d 68%,#6a5a3c 80%,#463b27 90%,#241e14 100%)}
 #top,#info,#misi,#peringkat,#donasi,.d{background:none}
 #misi{padding-top:150px}#misi::before,#donasi::before{display:none}
 nav>b{display:inline-flex;align-items:center;gap:8px}.lgo{flex:none;filter:drop-shadow(0 1px 2px rgba(0,0,0,.5))}
@@ -485,7 +481,7 @@ body{background:#000}
 .scene span{font-size:clamp(26px,3.6vw,48px)}.scene span:nth-child(3n){font-size:clamp(20px,2.6vw,34px)}.scene span:nth-child(4n+1){font-size:clamp(32px,4.4vw,58px)}
 .pf div{height:150px;font-size:70px;position:relative;background-image:radial-gradient(circle at 18% 28%,rgba(255,255,255,.38) 0 24px,transparent 25px),radial-gradient(circle at 86% 72%,rgba(255,255,255,.26) 0 38px,transparent 39px)!important}
 .pf div::after{content:"✓ Terverifikasi";position:absolute;left:10px;bottom:10px;font:800 11px 'Nunito',sans-serif;background:rgba(255,255,255,.88);color:#3B5335;padding:3px 10px;border-radius:99px}
-.eg-footer{background:#7f7d44}
+.eg-footer{background:linear-gradient(180deg,#241e14 0,#5f7459 90px,#5f7459 100%)}
 
 /* === Tata letak compact === */
 .wrap{max-width:1180px}
@@ -549,3 +545,6 @@ dialog.eg-ui-article-modal,dialog.eg-ui-review-dialog{width:min(560px,94vw)}
 /* pop-up selalu di tengah (reset margin global menghilangkan margin:auto bawaan dialog) */
 dialog.eg-modal{margin:auto;max-height:92vh;overflow:auto}
 dialog.eg-modal::backdrop{background:rgba(20,28,18,.55)}
+/* === Latar selaras animasi: kontras teks & gunung footer === */
+.eg-sub{color:#2f3d2c}
+.kon__intro{color:#ECE5D3}.kon__intro h2{color:#fff3dc}

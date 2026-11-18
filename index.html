@@ -6,6 +6,7 @@
 <title>EcoGueTaps</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="eg-cursor.css">
 </head>
 <body>
 <div id="intro"><div class="isky"></div><canvas id="introCanvas" class="iscene" aria-hidden="true"></canvas><button id="skip" class="btn y" type="button">Lewati intro</button></div>
@@ -67,7 +68,6 @@
 
 <!-- 3. DARATAN: Daily Quest (dari tim) -->
 <section class="eg-section eg-section--quest" id="misi">
- <div class="eg-hill eg-hill--lilac" aria-hidden="true"></div><div class="eg-hill eg-hill--gold-r" aria-hidden="true"></div><div class="eg-hill eg-hill--gold-l" aria-hidden="true"></div>
  <div class="wrap">
   <h2 class="eg-title">Misi seru hari ini!</h2>
   <p class="eg-sub">Pilih tantangan yang bisa kamu lakukan dari rumah atau sekolah.</p>
@@ -185,8 +185,8 @@
     <!-- ============ FOOTER ============ -->
     <footer class="eg-footer">
         <svg class="eg-mountains" viewBox="0 0 1440 520" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0 80 L70 150 L130 260 L330 190 L520 120 L560 150 L760 70 L860 130 L990 40 L1090 120 L1190 60 L1300 170 L1440 100 L1440 520 L0 520Z" fill="#9c9246" opacity=".95"/>
-            <path d="M0 260 L160 130 L300 210 L430 300 L640 220 L820 150 L1010 330 L1180 230 L1330 130 L1440 250 L1440 520 L0 520Z" fill="#c6a936" opacity=".9"/>
+            <path d="M0 80 L70 150 L130 260 L330 190 L520 120 L560 150 L760 70 L860 130 L990 40 L1090 120 L1190 60 L1300 170 L1440 100 L1440 520 L0 520Z" fill="#5f7459" opacity=".95"/>
+            <path d="M0 260 L160 130 L300 210 L430 300 L640 220 L820 150 L1010 330 L1180 230 L1330 130 L1440 250 L1440 520 L0 520Z" fill="#7a6a44" opacity=".95"/>
             <path d="M0 300 L120 190 L230 260 L330 360 L520 290 L690 330 L860 270 L1020 380 L1160 330 L1300 300 L1440 360 L1440 520 L0 520Z" fill="#33432d"/>
             <path d="M0 400 L180 330 L310 390 L440 330 L620 400 L800 340 L1000 420 L1200 360 L1440 430 L1440 520 L0 520Z" fill="#26331f"/>
         </svg>
@@ -226,5 +226,6 @@
     <div class="eg-toast" id="eg-toast" role="status" aria-live="polite"></div>
 
 <script src="script.js" defer></script>
+<script src="eg-cursor.js" defer></script>
 </body>
 </html>
